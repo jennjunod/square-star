@@ -25,7 +25,8 @@
     "@unocss/astro": "^0.57.7",
     "astro": "^4.13.1",
     "astro-font": "^0.0.80",
-    "contentful": "^10.13.1",
+    "contentful": "^10.15.0",
+    "contentful-import": "^9.4.58",
     "satori": "^0.5.0",
     "satori-html": "^0.3.2",
     "typescript": "^5.5.4"

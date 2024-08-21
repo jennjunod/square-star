@@ -1,7 +1,12 @@
 ---
-import { contentfulClient } from "../lib/contentful";
+// import { contentfulClient } from "../lib/contentful";
+// import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
+// import type { EntryFieldTypes } from "contentful";
+
+import { contentfulClient } from ".../../src/lib/contentful";
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 import type { EntryFieldTypes } from "contentful";
+
 
 interface BlogPost {
   contentTypeId: "blogPost",
