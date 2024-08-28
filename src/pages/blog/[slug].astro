@@ -1,4 +1,4 @@
-<!-- ---
+---
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 
@@ -18,14 +18,4 @@ const { blogpost } = Astro.props;
 const { Content } = await blogpost.render();
 ---
 
-<Content /> -->
----
-import { contentfulClient } from "../../lib/contentful";
-import type { BlogPost } from "../../lib/contentful";
-
-export async function getStaticPaths() {
-  const entries = await contentfulClient.getEntries<BlogPost>({
-    content_type: "blogPost",
-  });
-}
----
+<Content />
