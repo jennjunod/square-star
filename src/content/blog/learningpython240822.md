@@ -1,6 +1,6 @@
 ---
 title: "Learning Python: Booleans and Conditionals"
-pubDate: 08/29/2024 14:25
+pubDate: August 22 2024 14:25
 author: "Jenn Junod"
 tags:
   - Python
