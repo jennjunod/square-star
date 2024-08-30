@@ -5,21 +5,28 @@ interface Props {
 
 const navigationItems = [
   { name: 'Home', url: '/' },
-  { name: 'Blog', url: '/blog/' },
+  { name: 'Content', url: '/blog/' },
 ];
 
 const socialIcons = [
-  {
-    name: 'GitHub',
-    url: 'https://github.com/eliancodes/brutal',
-    icon: 'i-uil-github',
-  },
+  
   {
     name: 'Twitter',
-    url: 'https://www.twitter.com/eliancodes',
+    url: 'https://www.twitter.com/jennjunod',
     icon: 'i-uil-twitter',
   },
-  { name: 'RSS', url: '/feed.xml', icon: 'i-uil-rss' },
+    {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/jennjunod',
+    icon: 'i-uil-linkedin',
+    },
+    {
+    name: 'GitHub',
+    url: 'https://github.com/jennjunod',
+    icon: 'i-uil-github',
+  },
+  
+  // { name: 'RSS', url: '/feed.xml', icon: 'i-uil-rss' },
 ];
 
 const { pageTitle } = Astro.props;
@@ -65,7 +72,7 @@ const { pageTitle } = Astro.props;
   <nav class='md:hidden flex'>
     <h2 class='hidden'>Mobile Navigation</h2>
     <ul>
-      <li><a href='/blog/'>Blog</a></li>
+      <li><a href='/blog/'>Content</a></li>
     </ul>
   </nav>
 </header>
