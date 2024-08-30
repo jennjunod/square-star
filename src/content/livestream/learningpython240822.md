@@ -4,9 +4,9 @@ pubDate: August 22 2024 14:25
 author: "Jenn Junod"
 tags:
   - Python
-imgUrl: '../../assets/BlogGraphics/20240822.png'
+imgUrl: '../../assets/LivestreamGraphics/20240822.png'
 description: Finishing Booleans and Conditionals. 
-layout: '../../layouts/BlogPost.astro'
+layout: '../../layouts/LivestreamPost.astro'
 embed: 
 ---
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Fuibpypn_LA?si=Kx974fcg4cUzsYmJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
@@ -28,4 +28,4 @@ The stream ended with plans to explore more advanced topics like classes and inh
 3. **What is the difference between `if...else` statements and using logical operators like `and` and `or` in Python?**
    - `if...else` statements are used for branching logic, whereas logical operators like `and` and `or` are used to evaluate multiple conditions in a single expression. Both can be used to achieve similar outcomes, but the choice depends on the context and readability of the code.
 
-If you have more questions or want to join the conversation, feel free to join the stream or ask on Twitter
+If you have more questions or want to join the conversation, feel free to join the stream or ask on Twitter!

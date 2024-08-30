@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '@layouts/Default.astro';
+// import LivestreamList from '@components/blog/BlogList.astro';
+import LivestreamList from '@components/livestream/LivestreamList.astro';
+
+const posts = await getCollection('livestream').then((collection) =>
+  collection.reverse()
+);
+---
+
+<Layout
+  title='Livestream'
+  description='Past Livestreams'
+  pageTitle='TJT Livestream'
+>
+  <main class='bg-green p-6'>
+    <LivestreamList posts={posts} />
+  </main>
+</Layout>

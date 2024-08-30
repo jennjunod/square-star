@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const livestreamEntries = await getCollection('livestream');
+  return livestreamEntries.map((livestreampost) => ({
+    params: { slug: livestreampost.slug },
+    props: { livestreampost },
+  }));
+}
+
+interface Props {
+  livestreampost: CollectionEntry<'blog'>;
+}
+
+const { livestreampost } = Astro.props;
+const { Content } = await livestreampost.render();
+---
+
+<Content />
