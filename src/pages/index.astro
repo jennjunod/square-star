@@ -5,7 +5,7 @@ import MobileSocials from '@components/home/MobileSocials.astro';
 import { Pill } from '@eliancodes/brutal-ui';
 import { Button } from '@eliancodes/brutal-ui';
 import { Card } from '@eliancodes/brutal-ui';
-import jennPhoto from '/public/20230809_Jenn.png'; 
+import jennPhoto from '/public/20230809Jenn.png'; 
 
 const builtWith = [
   { name: 'Python', url: 'https://astro.build/' },
@@ -37,6 +37,20 @@ const guestWith = [
   <main class='bg-pink p-6'>
     <MobileSocials />
     <section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
+      <div class='col-span-2'>
+        <Card>
+          
+          <img src={jennPhoto.toString()} alt="Jenn Junod" class="w-full h-auto rounded-lg" />
+
+
+           <!--<p class='poppins'>
+            Brutal is a theme built with Astro, UnoCSS by <a
+              href='https://www.elian.codes/'>Elian</a
+            >. It's a simple, fast, and modern theme that is easy to use and
+            customize. Mainly meant to power blogs and personal websites.
+          </p> -->
+        </Card>
+      </div>
       <h2 class='hidden'>Teach Jenn Tech</h2>
       <div class='col-span-4'>
         <Card>
@@ -59,6 +73,7 @@ const guestWith = [
           </div>
         </Card>
       </div>
+      
       <div class='col-span-2'>
         <Card>
           <h2 class='text-xl md:text-2xl lg:text-4xl mb-4 dm-serif'>
@@ -103,22 +118,7 @@ const guestWith = [
           </ul>
         </Card>
       </div>
-      <div class='col-span-2'>
-        <Card>
-          <h2 class='text-xl md:text-2xl lg:text-4xl mb-4 dm-serif'>
-                        Hosted by Jenn Junod
-          </h2>
-          <img src={jennPhoto.toString()} alt="Jenn Junod" class="w-full h-auto rounded-lg" />
-
-
-           <!--<p class='poppins'>
-            Brutal is a theme built with Astro, UnoCSS by <a
-              href='https://www.elian.codes/'>Elian</a
-            >. It's a simple, fast, and modern theme that is easy to use and
-            customize. Mainly meant to power blogs and personal websites.
-          </p> -->
-        </Card>
-      </div>
+     
     </section>
     <RecentBlogPosts />
   </main>
