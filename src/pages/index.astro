@@ -8,24 +8,12 @@ import { Card } from '@eliancodes/brutal-ui';
 import jennPhoto from '/public/20230809Jenn.png'; 
 
 const builtWith = [
-  { name: 'Python', url: 'https://astro.build/' },
-  { name: 'Kaggle', url: 'https://uno.antfu.me/' },
-  // {
-  //   name: 'Content Collections',
-  //   url: 'https://docs.astro.build/en/guides/content-collections/',
-  // },
-  // { name: 'RSS', url: 'https://docs.astro.build/en/guides/rss/' },
-  // {
-  //   name: 'Sitemap',
-  //   url: 'https://docs.astro.build/en/guides/integrations-guide/sitemap/',
-  // },
-  // { name: 'Vercel', url: 'https://vercel.com' },
-  // { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
+  { name: 'Python', url: 'https://www.python.org/' },
+  { name: 'Kaggle', url: 'https://www.kaggle.com/learn/python' },
 ];
 const guestWith = [
-  {name: 'Damien Hale', url: ''},
-  {name: 'Jay Miller', url: ''}
-
+  {name: 'Damien Hale', url: 'https://www.instagram.com/bboyjamba/'},
+  {name: 'Jay Miller', url: 'https://kjaymiller.com/'}
 ];
 ---
 
@@ -39,16 +27,7 @@ const guestWith = [
     <section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
       <div class='col-span-2'>
         <Card>
-          
           <img src={jennPhoto.toString()} alt="Jenn Junod" class="w-full h-auto rounded-lg" />
-
-
-           <!--<p class='poppins'>
-            Brutal is a theme built with Astro, UnoCSS by <a
-              href='https://www.elian.codes/'>Elian</a
-            >. It's a simple, fast, and modern theme that is easy to use and
-            customize. Mainly meant to power blogs and personal websites.
-          </p> -->
         </Card>
       </div>
       <h2 class='hidden'>Teach Jenn Tech</h2>
@@ -58,9 +37,6 @@ const guestWith = [
           Teach Jenn Tech
           </h2>
           <div class='flex flex-col justify-between items-start gap-4'>
-            </p>
-            <p class='mt-0 outfit text-xl md:text-3xl lg:text-5xl'>
-              Join Jenn & learn together!
             </p>
             <div class="flex flex-row gap-4 mt-8"> <!-- Update here -->
               <Button target={'_self'} href='https://www.twitch.tv/jennjunod'>
@@ -76,14 +52,17 @@ const guestWith = [
       
       <div class='col-span-2'>
         <Card>
-          <h2 class='text-xl md:text-2xl lg:text-4xl mb-4 dm-serif'>
-                        Learning About
-          </h2>
+          <h2 class='underline text-xl md:text-2xl lg:text-4xl mb-4 dm-serif'>
+           Currently  Learning: 
+</h2>
+          <h3 class='text-l md:text-xl lg:text-2xl mb- dm-serif'>
+            With
+          </h3>
           <ul class='flex gap-4 flex-wrap'>
-            {
-              builtWith.map((item) => (
-                <li>
-                  <Pill class='px-6 py-3 text-lg'>
+          {
+            guestWith.map((item) => (
+              <div> 
+               <Button
                     <a
                       class='sanchez'
                       href={item.url}
@@ -92,33 +71,36 @@ const guestWith = [
                     >
                       {item.name}
                     </a>
-                  </Pill>
-                </li>
-              ))
-            }
-            <h2 class='text-xl md:text-2xl lg:text-4xl mb-4 dm-serif'>
-              Learning with
-              </h2>
+                  </button>
+              </div>
+            ))
+          }
+          </li>
+          <div>
+          <h3 class='text-l md:text-xl lg:text-2xl mb- dm-serif'>
+                         About
+          </h3>
+          <ul class='flex gap-4 flex-wrap'>
             {
-              guestWith.map((item) => (
+              builtWith.map((item) => (
                 <li>
                   <Button
-                    <a 
-                    class='sanchez'
-                    href={item.url}
-                    target="_blank"
-                    title{'Go to ${item.name}'}
+                    <a
+                      class='sanchez'
+                      href={item.url}
+                      target='_blank'
+                      title={`Go to ${item.name}`}
                     >
                       {item.name}
                     </a>
-                  </Button>
+                  </button>
                 </li>
+                </div>
               ))
             }
           </ul>
         </Card>
       </div>
-     
     </section>
     <RecentBlogPosts />
   </main>
