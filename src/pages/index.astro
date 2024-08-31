@@ -1,6 +1,8 @@
 ---
 import Layout from '@layouts/Default.astro';
 import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
+import AboutSite from '@components/home/AboutSite.astro';
+
 import MobileSocials from '@components/home/MobileSocials.astro';
 import { Pill } from '@eliancodes/brutal-ui';
 import { Button } from '@eliancodes/brutal-ui';
@@ -18,90 +20,14 @@ const guestWith = [
 ---
 
 <Layout
+
   title='Home'
   pageTitle='Teach Jenn Tech'
   description='Teach Jenn Tech livestream, come learn with us!'
 >
-  <main class='bg-pink p-6'>
-    <MobileSocials />
-    <section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
-      <div class='col-span-2'>
-        <Card>
-          <img src={jennPhoto.toString()} alt="Jenn Junod" class="w-full h-auto rounded-lg" />
-        </Card>
-      </div>
-      <h2 class='hidden'>Teach Jenn Tech</h2>
-      <div class='col-span-4'>
-        <Card>
-          <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
-          Teach Jenn Tech
-          </h2>
-          <div class='flex flex-col justify-between items-start gap-4'>
-            </p>
-            <div class="flex flex-row gap-4 mt-8"> <!-- Update here -->
-              <Button target={'_self'} href='https://www.twitch.tv/jennjunod'>
-                Check out the show &rarr;
-              </Button>
-              <Button target={'_self'} href='/blog/'>
-                Past Content &rarr;
-              </Button>
-            </div>
-          </div>
-        </Card>
-      </div>
-      
-      <div class='col-span-2'>
-        <Card>
-          <h2 class='underline text-xl md:text-2xl lg:text-4xl mb-4 dm-serif'>
-           Currently  Learning: 
-</h2>
-          <h3 class='text-l md:text-xl lg:text-2xl mb- dm-serif'>
-            With
-          </h3>
-          <ul class='flex gap-4 flex-wrap'>
-          {
-            guestWith.map((item) => (
-              <div> 
-               <Button
-                    <a
-                      class='sanchez'
-                      href={item.url}
-                      target='_blank'
-                      title={`Go to ${item.name}`}
-                    >
-                      {item.name}
-                    </a>
-                  </button>
-              </div>
-            ))
-          }
-          </li>
-          <div>
-          <h3 class='text-l md:text-xl lg:text-2xl mb- dm-serif'>
-                         About
-          </h3>
-          <ul class='flex gap-4 flex-wrap'>
-            {
-              builtWith.map((item) => (
-                <li>
-                  <Button
-                    <a
-                      class='sanchez'
-                      href={item.url}
-                      target='_blank'
-                      title={`Go to ${item.name}`}
-                    >
-                      {item.name}
-                    </a>
-                  </button>
-                </li>
-                </div>
-              ))
-            }
-          </ul>
-        </Card>
-      </div>
-    </section>
+<main class='bg- p-10'>
+
+    <AboutSite />
     <RecentBlogPosts />
-  </main>
+</main>
 </Layout>

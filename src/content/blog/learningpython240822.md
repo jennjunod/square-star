@@ -19,13 +19,16 @@ One of the key takeaways from the stream was the concept of "truthiness" and how
 The stream ended with plans to explore more advanced topics like classes and inheritance in future sessions. Jenn and her co-host also discussed adjusting their streaming schedule to accommodate life and work, with the new time set for 1 p.m. Pacific Standard Time starting next week.
 
 ### Questions Asked and Answers:
-1. **What happens if you call `int` on a Boolean?**
-   - Calling `int` on a Boolean returns `1` if the Boolean is `True` and `0` if the Boolean is `False`.
+#### 1. What happens if you call `int` on a Boolean?
 
-2. **How do you write succinct code without sacrificing readability?**
-   - While it is possible to write very short, one-liner code, it is often better to prioritize readability by using descriptive variable names and structuring the code in a way that is easy to understand.
+- Calling `int` on a Boolean returns `1` if the Boolean is `True` and `0` if the Boolean is `False`.
 
-3. **What is the difference between `if...else` statements and using logical operators like `and` and `or` in Python?**
-   - `if...else` statements are used for branching logic, whereas logical operators like `and` and `or` are used to evaluate multiple conditions in a single expression. Both can be used to achieve similar outcomes, but the choice depends on the context and readability of the code.
+#### 2. How do you write succinct code without sacrificing readability?
+
+-  While it is possible to write very short, one-liner code, it is often better to prioritize readability by using descriptive variable names and structuring the code in a way that is easy to understand.
+
+#### 3. What is the difference between `if...else` statements and using logical operators like `and` and `or` in Python?
+
+- `if...else` statements are used for branching logic, whereas logical operators like `and` and `or` are used to evaluate multiple conditions in a single expression. Both can be used to achieve similar outcomes, but the choice depends on the context and readability of the code.
 
 If you have more questions or want to join the conversation, feel free to join the stream or ask on Twitter!

@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import BlogList from '../blog/BlogList.astro';
+import BlogList from './BlogList.astro';
 import { Card } from '@eliancodes/brutal-ui';
 import { Button } from '@eliancodes/brutal-ui';
 
@@ -11,22 +11,13 @@ interface Props {
 const { count } = Astro.props;
 
 const posts = await getCollection('blog').then((posts) =>
-  posts.reverse().slice(0, count ?? 3)
+  posts.reverse().slice(0, count ?? 100)
 );
 ---
 
 <section class='mt-8'>
   <Card>
     <div class='flex justify-between items-start'>
-      <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
-        Recent Content
-      </h2>
-      <div class='hidden md:block'>
-        <Button href='/blog/'>Go to content &rarr;</Button>
-      </div>
-      <div class='block md:hidden'>
-        <Button href='/content/'>to content</Button>
-      </div>
     </div>
     <BlogList posts={posts} />
   </Card>

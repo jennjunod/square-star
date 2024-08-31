@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '@layouts/Default.astro';
+import AllBlogPosts from '@components/blog/AllBlogPosts.astro';
+import AboutSite from '@components/home/AboutSite.astro';
+
+const posts = await getCollection('blog').then((collection) =>
+  collection.reverse()
+);
+---
+
+<Layout
+  title='Livestream'
+  description='Checkout Teach Jenn Tech Livestreams'
+  pageTitle='Livestreams'
+>
+<main class='bg- p-10'>
+  <AboutSite />
+    <AllBlogPosts/>
+    
+  </main>
+</Layout>

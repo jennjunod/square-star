@@ -8,15 +8,15 @@ const { headings } = Astro.props;
 
 <aside>
   <nav class='hidden lg:block sticky top-6'>
-    <ul>
+    <ul class="space-y-2"> <!-- Added spacing between list items -->
       {
         headings.map((heading: any) => (
           <li class='py-1'>
             {[...Array(heading.depth - 1)].map((_, _i) => (
-              <span class='inline-block w-4' />
+              <span class='inline-block w-9' />
             ))}
             <a
-              class='hover:text-stone transition-all duration-150 ease-in-out text-dark poppins'
+              class='hover:text-stone transition-all duration-140 ease-in-out text-dark poppins block break-words' 
               href={`#${heading.slug}`}
             >
               {heading.text}

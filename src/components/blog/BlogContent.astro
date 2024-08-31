@@ -5,7 +5,7 @@ interface Props {
 
 const { content } = Astro.props;
 ---
-
+<card>
 <article class='prose-slate w-sm md:w-prose md:prose poppins'>
   <h1>
     {content.title}
@@ -18,3 +18,4 @@ const { content } = Astro.props;
  
   <a href='/blog/' title='Back to blog'>&larr; Back to blog</a>
 </article>
+</card>
