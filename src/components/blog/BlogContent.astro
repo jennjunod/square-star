@@ -6,16 +6,19 @@ interface Props {
 const { content } = Astro.props;
 ---
 <card>
-<article class='prose-slate w-sm md:w-prose md:prose poppins'>
-  <h1>
-    {content.title}
-  </h1>
-  <p class='text-slate text-sm md:text-base'>
-    Published on {content.pubDate} by {content.author}
-  </p>
-  <p class='text-slate'>Written by {content.author}</p>
-  <slot />
- 
-  <a href='/blog/' title='Back to blog'>&larr; Back to blog</a>
-</article>
+  <article class='prose-slate w-sm md:w-prose md:prose poppins'>
+    <h1>{content.title}</h1>
+    <p class='text-slate text-sm md:text-base'>
+      Published on {content.pubDate} by {content.author}
+    </p>
+    <p class='text-slate'>Written by {content.author}</p>
+
+    <!-- Render the embedded content safely using Astro's set:html directive -->
+    {content.embed && (
+      <div class="embed-container" set:html={content.embed}></div>
+    )}
+
+    <slot />
+    <a href='/content/' title='Back to Content'>&larr; Back to content</a>
+  </article>
 </card>

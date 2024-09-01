@@ -6,9 +6,11 @@ interface Props {
 const { headings } = Astro.props;
 ---
 
-<aside>
+<aside class="toc-container">
+  
   <nav class='hidden lg:block sticky top-6'>
-    <ul class="space-y-2"> <!-- Added spacing between list items -->
+    <ul class="space-y-2">
+      <h4 class="font-bold">Table of Contents</h4>
       {
         headings.map((heading: any) => (
           <li class='py-1'>

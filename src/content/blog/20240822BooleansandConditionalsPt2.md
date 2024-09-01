@@ -1,5 +1,5 @@
 ---
-title: "Learning Python: Booleans and Conditionals"
+title: "Learning Python: Booleans and Conditionals Pt 2"
 pubDate: August 22 2024 14:25
 author: "Jenn Junod"
 tags:
@@ -7,9 +7,9 @@ tags:
 imgUrl: '../../assets/BlogGraphics/20240822.png'
 description: Finishing Booleans and Conditionals. 
 layout: '../../layouts/BlogPost.astro'
-embed: 
+embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Fuibpypn_LA?si=Kx974fcg4cUzsYmJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Fuibpypn_LA?si=Kx974fcg4cUzsYmJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 
 In a recent stream, Jenn Junod and her co-host Damien explored various coding challenges, focusing on Python while battling through a particularly challenging course. The session highlighted the importance of balancing code readability with succinctness. They discussed the pitfalls of overly concise code, especially for beginners, and emphasized that while short code may look elegant, it can be difficult to understand and maintain. Throughout the stream, Jenn struggled with the course material but persisted, occasionally copying and pasting solutions to learn from them.
@@ -18,7 +18,7 @@ One of the key takeaways from the stream was the concept of "truthiness" and how
 
 The stream ended with plans to explore more advanced topics like classes and inheritance in future sessions. Jenn and her co-host also discussed adjusting their streaming schedule to accommodate life and work, with the new time set for 1 p.m. Pacific Standard Time starting next week.
 
-### Questions Asked and Answers:
+### Questions from the stream:
 #### 1. What happens if you call `int` on a Boolean?
 
 - Calling `int` on a Boolean returns `1` if the Boolean is `True` and `0` if the Boolean is `False`.
