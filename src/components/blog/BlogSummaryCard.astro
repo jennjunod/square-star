@@ -17,6 +17,7 @@ const { post } = Astro.props;
   imgAlt={post.data.title}
   imgSrc={post.data.imgUrl}
 >
+<a href={`/content/${post.slug}/`}>
 <h2 class="title font-bold">{post.data.title}</h2>
 
   <div class="description">{post.data.description}</div>
