@@ -11,6 +11,7 @@ interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 if (Astro.props.ogImage === undefined) {
+  // Use the correct logo image for the Open Graph image
   Astro.props.ogImage = new URL('/src/assets/tjtLogo.png', Astro.url);
 }
 
@@ -23,28 +24,22 @@ const { title, description, ogImage } = Astro.props;
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <meta name='generator' content={Astro.generator} />
 
-  <!-- <link
-    rel='alternate'
-    href='https://brutal.elian.codes/blog.xml'
-    type='application/rss+xml'
-  /> -->
-
   <meta name='title' content={`Teach Jenn Tech | ${title}`} />
   <meta name='description' content={description} />
 
   <meta property='og:type' content='website' />
-  <meta property='og:url' content={canonicalURL} />
-  <meta property='og:title' content={title} />
-  <meta property='og:description' content={description} />
+  <meta property='og:url' content="https://teachjenntech.com" />
+  <meta property='og:title' content="Teach Jenn Tech" />
+  <meta property='og:description' content="Teach Jenn Tech livestream, come learn with us!" />
   <meta property='og:image' content={ogImage} />
 
   <meta property='twitter:card' content='summary_large_image' />
-  <meta property='twitter:url' content={canonicalURL} />
-  <meta property='twitter:title' content={title} />
-  <meta property='twitter:description' content={description} />
+  <meta property='twitter:url' content="https://teachjenntech.com" />
+  <meta property='twitter:title' content="Teach Jenn Tech" />
+  <meta property='twitter:description' content="Teach Jenn Tech livestream, come learn with us!" />
   <meta property='twitter:image' content={ogImage} />
 
-  <link rel='canonical' href={canonicalURL} />
+  <link rel='canonical' href="https://teachjenntech.com" />
   <link rel='icon' type='image/svg' href='/favicon.svg' />
 
   <title>Teach Jenn Tech | {title}</title>
