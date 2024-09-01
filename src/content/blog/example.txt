@@ -1,6 +1,6 @@
 ---
 title: "Learning Python: Lists"
-pubDate: August 29 2024 14:25
+pubDate: August 29 2024 
 author: "Jenn Junod"
 tags:
   - Python

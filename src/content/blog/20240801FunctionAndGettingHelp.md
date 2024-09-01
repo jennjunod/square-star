@@ -1,6 +1,6 @@
 ---
 title: "Learning Python: Functions and Getting Help"
-pubDate: August 1 2024 14:25
+pubDate: August 1 2024 
 author: "Jenn Junod"
 tags:
   - Python
@@ -31,3 +31,15 @@ The stream concluded with Jenn successfully modifying a function to account for 
 - Indentation is crucial in Python because it determines the structure of the code and which lines of code belong to specific functions or control statements.
 
 Feel free to join the conversation or ask more questions on their next stream!
+
+## Enjoy learning with us?
+
+We're using [Kaggle Learn - Python](https://www.kaggle.com/learn/python).
+### Follow us!
+
+| **Jenn**                                                                                                                                  | **Damien**                                                                        |
+|-------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| - [Twitch](https://www.twitch.tv/jennjunod)                                                                                               | - [Instagram](https://www.instagram.com/bboyjamba/)                               |
+| - [YouTube](https://www.youtube.com/@jennjunod)                                                                                           | - [LinkedIn](https://www.linkedin.com/in/damienhale/)                             |
+| - [Twitter](https://x.com/JennJunod)                                                                                                      |                                                                                   |
+| - [LinkedIn](https://www.linkedin.com/in/jennjunod/)                                                                                      |                                                                                   |

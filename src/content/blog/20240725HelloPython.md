@@ -1,6 +1,6 @@
 ---
 title: "Learning Python: Hello Python"
-pubDate: July 25 2024 14:25
+pubDate: July 25 2024 
 author: "Jenn Junod"
 tags:
   - Python
@@ -31,3 +31,15 @@ The stream concluded with a successful completion of the exercises, although not
 - Python follows the order of operations (PEMDAS/BODMAS), and you can use parentheses to ensure the operations occur in the desired order.
 
 Feel free to join future streams to learn more about Python and other coding topics!
+
+## Enjoy learning with us?
+
+We're using [Kaggle Learn - Python](https://www.kaggle.com/learn/python).
+### Follow us!
+
+| **Jenn**                                                                                                                                  | **Damien**                                                                        |
+|-------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| - [Twitch](https://www.twitch.tv/jennjunod)                                                                                               | - [Instagram](https://www.instagram.com/bboyjamba/)                               |
+| - [YouTube](https://www.youtube.com/@jennjunod)                                                                                           | - [LinkedIn](https://www.linkedin.com/in/damienhale/)                             |
+| - [Twitter](https://x.com/JennJunod)                                                                                                      |                                                                                   |
+| - [LinkedIn](https://www.linkedin.com/in/jennjunod/)                                                                                      |                                                                                   |
