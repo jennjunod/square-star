@@ -1,0 +1,29 @@
+---
+import FollowUs from '@components/home/Connect.astro';
+import { getCollection } from 'astro:content';
+import Layout from '@layouts/Default.astro';
+import AllBlogPosts from '@components/blog/AllBlogPosts.astro';
+import AboutSite from '@components/home/AboutSite.astro';
+import Jenn from '@components/home/Jenn.astro';
+import Damien from '@components/home/Damien.astro';
+import Jay from '@components/home/Jay.astro';
+
+
+const posts = await getCollection('blog').then((collection) =>
+collection.reverse()
+);
+---
+
+<Layout
+title='Connect with Us'
+description='Checkout Teach Jenn Tech Livestreams'
+pageTitle='Connect with us!'
+>
+<main class='p-6 lg:grid lg:grid-cols-3 flex justify-center'>
+
+
+<Jenn />
+<Damien />
+<Jay />
+</main>
+</Layout>
