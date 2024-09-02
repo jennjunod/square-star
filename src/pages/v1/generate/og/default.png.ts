@@ -2,8 +2,11 @@ import { Resvg, type ResvgRenderOptions } from '@resvg/resvg-js';
 import type { APIRoute } from 'astro';
 import satori from 'satori';
 import { html as toReactElement } from 'satori-html';
+import { Image } from 'astro:assets';
+
 import tjtLogo from '/src/assets/tjtLogo.png';
 
+// Fetching the font file
 const fontFile = await fetch(
   'https://og-playground.vercel.app/inter-latin-ext-700-normal.woff'
 );
@@ -15,6 +18,10 @@ const width = 1200;
 
 export const GET: APIRoute = async () => {
   const websiteLink = 'https://teachjenntech.com';
+
+  // Use a publicly accessible image URL instead of localhost
+  const logoUrl = 'https://github.com/user-attachments/assets/7d9d31ff-030a-4a45-97d5-b33bc6070cfa';
+
   const html = toReactElement(`
   <div style="background-color: white; display: flex; flex-direction: column; height: 100%; padding: 3rem; width: 100%">
     <div style="display:flex; height: 100%; width: 100%; background-color: white; border: 6px solid black; border-radius: 0.5rem; padding: 2rem; filter: drop-shadow(6px 6px 0 rgb(0 0 0 / 1));">
@@ -26,7 +33,7 @@ export const GET: APIRoute = async () => {
         </div>
         <div style="display: flex; justify-content: space-between; align-items: baseline; padding-top: -2rem;">
           <p style="font-size: 32px">${websiteLink}</p>
-          <img src="${tjtLogo.src}" width="200px" height="200px" style="border: 3px solid black; border-radius: 0.5rem;" />
+          <img src="${logoUrl}" width="200px" height="200px" style="border: 3px solid black; border-radius: 0.5rem;" />
         </div>
       </div>
     </div>
