@@ -3,7 +3,6 @@ import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import satori from 'satori';
 import { html as toReactElement } from 'satori-html';
-import tjtLogo from '/src/assets/tjtLogo.png'; // Import the image
 
 const fontFile = await fetch(
   'https://og-playground.vercel.app/inter-latin-ext-700-normal.woff'
@@ -34,7 +33,7 @@ export const GET: APIRoute = async ({ params, props }) => {
             <p style="font-size: 48px;">Brutal theme for Astro</p>
             <p style="font-size: 38px;">${title}</p>
           </div>
-          <img src="${tjtLogo}" width="200px" height="200px" style="border: 3px solid black; border-radius: 0.5rem;" />
+          <img src="https://github.com/user-attachments/assets/7d9d31ff-030a-4a45-97d5-b33bc6070cfa" width="200px" height="200px" style="border: 3px solid black; border-radius: 0.5rem;" />
         </div>
         <div style="display: flex;">
           <p style="font-size: 24px;">${description}</p>
