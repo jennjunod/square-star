@@ -1,9 +1,9 @@
 ---
 name: Feature request
-about: Suggest an idea to Brutal
+about: Suggest an idea to TJT
 title: ''
 labels: enhancement
-assignees: ElianCodes
+assignees: JennJunod
 
 ---
 
