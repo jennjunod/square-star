@@ -6,12 +6,11 @@ import Jay from '/src/assets/Humans/jay.png';
 import Layout from '@layouts/Default.astro';
 
 
-const jennSocial = [
-{ name: 'Twitch', url: 'https://www.twitch.tv/jennjunod' },
-{ name: 'YouTube', url: 'https://www.youtube.com/@jennjunod' },
-{ name: 'X', url: 'https://x.com/JennJunod' },
-{ name: 'LinkedIn', url: 'https://www.linkedin.com/in/jennjunod/' },
-{ name: 'Website', url: 'https://teachjenntech.com' } ,
+const jaySocial = [
+{ name: 'YouTube', url: 'https://www.youtube.com/kjaymiller' },
+{ name: 'X', url: 'https://x.com/kjaymiller' },
+{ name: 'LinkedIn', url: 'https://www.linkedin.com/in/kjaymiller/' },
+{ name: 'Website', url: 'https://kjaymiller.com/'},
 ];
 ---
 <Card>
@@ -26,11 +25,11 @@ const jennSocial = [
 </h2>
     <ul class='flex gap-4 flex-wrap'>
     {
-        jennSocial.map((item) => (
+        jaySocial.map((item) => (
     <div> 
         <Button
                 <a
-                class='sanchez'
+                class='brutal-btn'
                 href={item.url}
                 target='_blank'
                 title={`Go to ${item.name}`}
