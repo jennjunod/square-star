@@ -1,15 +1,8 @@
 ---
-import Layout from '@layouts/Default.astro';
-import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
 import MobileSocials from '@components/home/MobileSocials.astro';
-import { Pill } from '@eliancodes/brutal-ui';
 import { Button } from '@eliancodes/brutal-ui';
 import { Card } from '@eliancodes/brutal-ui';
-import jennPhoto from '/src/assets/20230809Jenn.png';
-import { Image } from 'astro:assets';
 import tjtLogo from '/src/assets/tjtLogo.png';
-
-
 
 const builtWith = [
 { name: 'Python', url: 'https://www.python.org/' },
@@ -19,22 +12,17 @@ const guestWith = [
 {name: 'Damien Hale', url: 'https://www.instagram.com/bboyjamba/'},
 {name: 'Jay Miller', url: 'https://kjaymiller.com/'}
 ];
-
-
 ---
-
-
     <MobileSocials />
-    <section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
-    <div class='col-span-2'>
+    <section id='about' class='flex flex col md: flex-row gap-8 mt-4'>
+    <div class='flex 1'>
 <!-- Photo Card -->
 <Card>
     <img src={tjtLogo.src} alt="TJT" class="w-full h-auto rounded-lg" />
-
 </Card>
     </div>
 <h2 class='hidden'>Teach Jenn Tech</h2>
-    <div class='col-span-4'>
+    <div class='flex 2'>
 <!-- Teach Jenn Tech Card -->
         <Card>
 <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
@@ -53,7 +41,7 @@ const guestWith = [
         </div>
         </Card>
     </div>
-    <div class='col-span-2'>
+    <div class='flex 2'>
 <!-- Currently Learning Card -->
         <Card>
         <h2 class='underline text-xl md:text-2xl lg:text-4xl mb-4 dm-serif'>
