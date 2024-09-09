@@ -6,7 +6,7 @@ tags:
   - Python
   
 imgUrl: '../../assets/BlogGraphics/20240725HelloPython.png'
-description: Finishing Booleans and Conditionals. 
+description: Using Kaggle to start learning Python 
 layout: '../../layouts/BlogPost.astro'
 embed: ''
 ---

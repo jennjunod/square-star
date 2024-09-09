@@ -5,7 +5,7 @@ author: "Jenn Junod"
 tags:
   - Python
 imgUrl: '../../assets/BlogGraphics/20240808BooleansandConditionalsPt1.png'
-description: Finishing Booleans and Conditionals. 
+description: Using Kaggle to learn about Booleans and Conditionals. 
 layout: '../../layouts/BlogPost.astro'
 embed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/59O8z2QQAKg?si=Xiu7vuvAQKjth_Y8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 ---

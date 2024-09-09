@@ -5,7 +5,7 @@ author: "Jenn Junod"
 tags:
   - Python
 imgUrl: '../../assets/BlogGraphics/20240801FunctionAndGettingHelp.png'
-description: Finishing Booleans and Conditionals. 
+description: Learning Functions and the help function 
 layout: '../../layouts/BlogPost.astro'
 embed: ''
 ---
