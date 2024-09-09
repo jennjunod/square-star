@@ -1,0 +1,48 @@
+---
+import { Button } from '@eliancodes/brutal-ui';
+import { Card } from '@eliancodes/brutal-ui';
+import { Image } from 'astro:assets';
+import Jenn from '/src/assets/Humans/20230809Jenn.png';
+import Layout from '@layouts/Default.astro';
+
+
+const jennSocial = [
+{ name: 'Twitch', url: 'https://www.twitch.tv/jennjunod' },
+{ name: 'YouTube', url: 'https://www.youtube.com/@jennjunod' },
+{ name: 'X', url: 'https://x.com/JennJunod' },
+{ name: 'LinkedIn', url: 'https://www.linkedin.com/in/jennjunod/' },
+{ name: 'Website', url: 'https://teachjenntech.com' } ,
+];
+---
+<Card>
+<Card>
+    <img src={Jenn.src} alt="TJT" class="w-full h-auto rounded-lg" />
+</Card>
+
+
+<Card>
+    <h2 class='underline text-xl md:text-2xl lg:text-4xl mb-4 dm-serif'>
+    Connect with Jenn: 
+</h2>
+    <ul class='flex gap-4 flex-wrap'>
+    {
+        jennSocial.map((item) => (
+    <div> 
+        <Button
+                <a
+                class='brutal-btn'
+                href={item.url}
+                target='_blank'
+                title={`Go to ${item.name}`}
+                >
+                {item.name}
+                </a>
+            </button>
+        </div>
+        ))
+    }
+    </li>
+    <div>
+    </ul>
+    </Card>
+</Card>
