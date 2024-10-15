@@ -14,8 +14,8 @@ const guestWith = [
 ];
 ---
     <MobileSocials />
-    <section id='about' class='flex flex col md: flex-row gap-8 mt-4'>
-    <div class='flex 1'>
+    <section id='about' class='grid flex-md:grid-flow-row-dense md:grid-cols-3 flex-row gap-2rem mt-4 '>
+    <div class='flex 2'>
 <!-- Photo Card -->
 <Card>
     <img src={tjtLogo.src} alt="TJT" class="w-full h-auto rounded-lg" />
@@ -38,23 +38,18 @@ const guestWith = [
                 Past Content &rarr;
             </Button>
             </div>
-        </div>
-        </Card>
-    </div>
-    <div class='flex 2'>
-<!-- Currently Learning Card -->
-        <Card>
-        <h2 class='underline text-xl md:text-2xl lg:text-4xl mb-4 dm-serif'>
+        <h2 class='underline text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
         Currently  Learning: 
 </h2>
         <h3 class='text-l md:text-xl lg:text-2xl mb- dm-serif'>
-<!-- Learning With Section -->
+<!-- With Section -->
             With
         </h3>
         <ul class='flex gap-4 flex-wrap'>
         {
             guestWith.map((item) => (
         <div> 
+            <li>
             <Button
                     <a
                     class='brutal-btn'
@@ -65,34 +60,24 @@ const guestWith = [
                     {item.name}
                     </a>
                 </button>
+            </li>
             </div>
             ))
         }
-        </li>
-        <div>
-<!-- Learning About Section -->
-        <h3 class='text-l md:text-xl lg:text-2xl mb- dm-serif'>
-                    About
-        </h3>
-        <ul class='flex gap-4 flex-wrap'>
-            {
-            builtWith.map((item) => (
-                <li>
-                <Button
-                    <a
-                    class='brutal-btn'
-                    href={item.url}
-                    target='_blank'
-                    title={`Go to ${item.name}`}
-                    >
-                    {item.name}
-                    </a>
-                </button>
-                </li>
-                </div>
-            ))
-            }
         </ul>
+        
+        </div>
+        </Card>
+    </div>
+    <div class='flex'>
+<!-- About -->
+        <Card class=''>
+        <h2 class='underline text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
+        About Me: 
+        </h2>
+        <a class='word-break: break-all ' >Teach Jenn Tech is my personal platform where I dive into all things tech, from databases to JavaScript, TypeScript, and Python. I host livestreams and create educational content that breaks down these topics in a fun, approachable way. My goal is to help those who want to become developers or want to break into tech, not only understand but really adopt and enjoy the tools they’re working with. It’s all about making technology more human and building that sense of connection with the community.</a>
+        <h3 class='text-l md:text-xl lg:text-2xl mb- dm-serif'>
+
         </Card>
     </div>
     </section>
