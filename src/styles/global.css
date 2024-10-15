@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 .card-shadow {
-  filter: drop-shadow(7px 7px 0 rgb(0 0 0 / 1));
+  filter: drop-shadow(7px 7px 0 rgb(160, 168, 163));
   transition: all;
   transition-duration: 0.5s;
   animation: ease-in-out;
 }
 .card-shadow:hover {
-  filter: drop-shadow(5px 5px 0 rgb(0 0 0 / 1));
+  filter: drop-shadow(5px 5px 0 rgb(148, 148, 148));
 }
 
 :root 
